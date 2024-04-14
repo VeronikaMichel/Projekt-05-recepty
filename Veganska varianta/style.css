@@ -38,3 +38,150 @@ body {
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+.doporucujeme {
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+
+.hlavni-recept {
+    background-image: url(images/salat.jpg);
+    min-height: 200px;  
+}
+
+.recept-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px black;
+}
+
+h2 {
+    font-family: Raleway;
+    font-weight: 800;
+}
+.hlavni-nazev {
+    font-size: 28px;
+    margin-top: 90px;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 3px black;
+}
+
+.recepty {
+    /*width: 100%;*/
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.recept-nazev {
+    font-size: 18px;
+    text-shadow: 1px 1px 3px black;
+    margin-top: 40px;
+    position:relative;
+    top: 15px;
+}
+.recept2 {
+    background-image: url(images/chlebicek.jpg);
+    order: 1;
+}
+
+.recept3 {
+    background-image: url(images/tacos.jpg);
+    order: 3; 
+}
+
+.recept4 {
+    background-image: url(images/cizrna.jpg);
+    order: 2;
+}
+
+.recept5 {
+    background-image: url(images/burger.jpg);
+    order: 4;
+}
+.recept2, .recept3, .recept4, .recept5, .hlavni-recept {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px;
+    border-top: white solid 1px;
+}
+.recept2, .recept3, .recept4, .recept5 {
+    min-height: 90px;
+}
+
+@media (min-width: 480px) {
+    .hlavni-recept {
+        min-height: 250px;
+        padding: 20px;
+    }
+    .hlavni-nazev {
+        font-size: 36px;
+        position: relative;
+        top: 60px;
+    }
+
+    .recepty {
+    min-height: 150px;
+    display:flex;
+    flex-direction: row;
+    }
+    
+    .recept-nazev {
+        font-size: 22px;
+        position: relative;
+        top: 10px;
+        margin-bottom: 0;
+    }
+    .recept2, .recept3, .recept4, .recept5 {
+        padding: 20px;
+        flex: 50%;
+    }
+    
+    .recept2 {
+        order: 1;
+        }
+
+    .recept3 {
+        order: 2
+    }
+
+    .recept4, .recept2{
+        border-right: 1px solid white;
+    }
+    
+}
+
+@media (min-width: 860px) {
+        .doporucujeme {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .hlavni-recept {
+            min-height: 400px;
+            border-right: white solid 1px;
+            flex: 40%;
+        }
+        .hlavni-nazev {
+            font-size: 48px;
+            margin-bottom: 0;
+            position:relative;
+            top: 80px;
+            
+        }
+        .recepty {
+           min-height: 200px; 
+        }
+   
+        .recept2, .recept3, .recept4, .recept {
+            flex: 50%;  
+        }
+        
+        .recept-nazev {
+            font-size: 28px;
+            position: relative;
+            top: 60px; 
+        }
+}
